@@ -44,7 +44,7 @@ it for your particular affiliated package.
        delete it.
     6. Exit out of your text editor
 
-* Now tell git to remember the changes you just made:
+* Now tell git to remember the changes you just made::
 
    git add setup.py
    git commit -m "adjusted setup.py for new project yourpkg"
@@ -55,7 +55,7 @@ it for your particular affiliated package.
   the top as the licensees.  Otherwise, make sure to replace that file with
   whatever license you prefer, and update the `LICENSE` variable in
   ``setup.py`` to reflect your choice of license.  Again, tell git about your
-  changes:
+  changes::
 
     git add licenses/LICENSE.rst
     git add setup.py  # if you changed the license and modified setup.py
@@ -70,7 +70,7 @@ it for your particular affiliated package.
   compile python-like code to C to make it run faster - see the project's web
   site for details). These are provided as examples of standard way to lay
   these out. Once you understand these, though, you'll want to delete them
-  (and later replace with your own):
+  (and later replace with your own)::
 
     git rm packagename/example_mod.py
     git rm scripts/script_example
@@ -79,7 +79,7 @@ it for your particular affiliated package.
     git rm -r packagename/example_subpkg
     git commit -m "removed examples from package template"
 
-* Now rename the source code directory to match your project's name:
+* Now rename the source code directory to match your project's name::
 
     git mv packagename yourpkg
     git commit -m "renamed template package source to new project yourpkg"
@@ -99,21 +99,21 @@ it for your particular affiliated package.
      also want to update the `latex_documents` and `man_pages` variables to
      reflect your project, name, and author list.
 
-* Pass these changes on to git:
+* Pass these changes on to git::
 
     git add docs/conf.py
     git commit -m "updated documentation for new project yourpkg"
 
 * Update the names of the documentation files to match your package's name.
   First open ``docs/index.rst`` in a text editor and change the text
-  "packagename/index.rst" to e.g., "yourpkg/index.rst".  Then do:
+  "packagename/index.rst" to e.g., "yourpkg/index.rst".  Then do::
 
     git add docs/index.rst
     git mv docs/packagename docs/yourpkg
     git commit -m "Updated docs to reflect new project yourpkg"
 
 * Edit this file (README.rst) and delete all of this content, and replace it
-  with a short description of your affiliated package. Inform git:
+  with a short description of your affiliated package. Inform git::
 
     git add README.rst
     git commit -m "replaced README for new project yourpkg"
