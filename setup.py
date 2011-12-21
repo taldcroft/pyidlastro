@@ -43,7 +43,8 @@ packagenames = find_packages()
 
 # Treat everything in scripts except README.rst as a script to be installed
 scripts = glob.glob('scripts/*')
-scripts.remove('scripts/README.rst')
+if 'scripts/README.rst' in scripts:
+    scripts.remove('scripts/README.rst')
 
 # Check that Numpy is installed.
 # NOTE: We cannot use setuptools/distribute/packaging to handle this
