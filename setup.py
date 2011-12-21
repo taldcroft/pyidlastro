@@ -12,11 +12,11 @@ from astropy import setup_helpers
 from astropy.version_helper import get_git_devstr, generate_version_py
 
 # Set affiliated package-specific settings
-PACKAGENAME = 'packagename'
-DESCRIPTION = 'Astropy affiliated package'
-LONG_DESCRIPTION = ''
-AUTHOR = ''
-AUTHOR_EMAIL = ''
+PACKAGENAME = 'pyidlastro'
+DESCRIPTION = 'Python ports of IDL astronomy library routines'
+LONG_DESCRIPTION = pyidlastro.__doc__
+AUTHOR = 'Tom Aldcroft'
+AUTHOR_EMAIL = 'taldcroft@gmail.com'
 LICENSE = 'BSD'
 URL = 'http://astropy.org'
 
