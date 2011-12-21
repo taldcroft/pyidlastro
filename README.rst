@@ -15,7 +15,7 @@ it for your particular affiliated package.
 
 * You may have already done this, if you are looking at this file locally, but
   if not, you will need to obtain a copy of the package template.  Assuming
-  you have `git`_ installed, just do:
+  you have `git`_ installed, just do::
 
       git clone git://github.com/astropy/package-template.git newpackage
 
