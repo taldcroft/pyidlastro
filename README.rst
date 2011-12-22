@@ -2,6 +2,6 @@
 PyIDLastro Package
 ==================
 
-This package collects Python ports of routines from the IDL astronomy library.
+Astropy affiliated package for ported IDL astrolib routines.
 
 .. _astropy: http://www.astropy.org/
