@@ -14,30 +14,29 @@
 import os
 import sys
 
-import packagename
-
 # Load all of the global Astropy configuration
 from astropy.sphinx.conf import *
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('..'))
+import pyidlastro
 
 # -- General configuration -----------------------------------------------------
 
 # General information about the project.
-project = u'packagename'
-copyright = u'2011'
+project = u'pyidlastro'
+copyright = u'2012, PyIDLastro developers'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = packagename.__version__.split('-', 1)[0]
+version = pyidlastro.__version__.split('-', 1)[0]
 # The full version, including alpha/beta/rc tags.
-release = packagename.__version__
+release = pyidlastro.__version__
 
 # If true, '()' will be appended to :func: etc. cross-reference text.
 #add_function_parentheses = True

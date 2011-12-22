@@ -1,6 +1,6 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 
-from example import fib
+from example_mod import do_fib
 
 try:
     from .version import version as __version__
